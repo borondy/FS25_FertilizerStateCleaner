@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="106">
+    <author>Hunor</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Fertilizer State Cleaner</en>
+    </title>
+    <description>
+        <en><![CDATA[Admin console command that clears the fertilizer ground layer from a field.
+
+Console command:
+clearFertilizerState [fieldId]
+
+Without a field id the field under the player is used. Only fertilizer is removed, other spray types (manure, lime, ...) are left untouched. In multiplayer only admins can use it and the change is applied on the server.]]></en>
+    </description>
+    <multiplayer supported="true"/>
+    <extraSourceFiles>
+        <sourceFile filename="scripts/FertilizerStateCleanerEvent.lua"/>
+        <sourceFile filename="scripts/FertilizerStateCleaner.lua"/>
+    </extraSourceFiles>
+</modDesc>
