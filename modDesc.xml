@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <modDesc descVersion="106">
     <author>Hunor</author>
-    <version>1.0.0.0</version>
+    <version>1.0.0.1</version>
+    <iconFilename>icon.dds</iconFilename>
     <title>
         <en>Fertilizer State Cleaner</en>
     </title>
