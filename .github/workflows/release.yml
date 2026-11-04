@@ -1,0 +1,17 @@
+name: Release
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+  workflow_dispatch:
+
+concurrency: release-${{ github.ref }}
+
+jobs:
+  release:
+    permissions:
+      contents: write
+    uses: borondy/fs25-mod-workflows/.github/workflows/fs25-release.yml@v1
+    with:
+      mod-name: FS25_FertilizerStateCleaner
